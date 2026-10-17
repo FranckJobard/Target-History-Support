@@ -1,0 +1,63 @@
+name: Bug Report
+description: Report a problem with the N.I.N.A. Target History plugin
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please attach the N.I.N.A. log if possible.
+
+        **Find your N.I.N.A. log:**
+        1. Press **Win + R**.
+        2. Paste `%LOCALAPPDATA%\NINA\Logs\` and press Enter.
+        3. Locate the log corresponding to the time of the issue.
+        4. Review it for sensitive information, then attach it below (ZIP if needed).
+
+        If requested, set N.I.N.A. logging to **Debug**, reproduce the problem, then restore your usual setting.
+
+        **Privacy:** Issues are public. Check logs and screenshots for personal data before uploading.
+  - type: input
+    id: nina-version
+    attributes:
+      label: N.I.N.A. version
+      placeholder: "e.g. 3.2"
+    validations:
+      required: true
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Target History version
+      placeholder: "e.g. 0.2.0.0"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe what happened and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: N.I.N.A. log file
+      description: Attach the relevant log (or a ZIP). If unavailable, explain why.
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots (optional)
+      description: Attach screenshots if useful.
+    validations:
+      required: false
