@@ -1,0 +1,25 @@
+name: Feature Request
+description: Suggest a new feature or improvement
+title: "[Feature] "
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to see?
+      description: Describe the proposed feature.
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Why would this be useful?
+      description: Explain the workflow or problem this would solve.
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional details (optional)
+      description: Screenshots, examples, or alternatives.
+    validations:
+      required: false
